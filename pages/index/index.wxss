@@ -1,0 +1,20 @@
+/**index.wxss**/
+.container{
+    height: var(--height--);
+    width: 100%;
+    height: 100%;
+}
+.slid-show{
+    height: 350rpx;
+    width: 100%;
+}
+.swiper{
+    height: 100%;
+    width: 100%;
+}
+.swiper-img{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+    

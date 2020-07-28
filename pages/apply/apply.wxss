@@ -1,0 +1,53 @@
+page{
+  background-color:#f0f3f6;
+}
+
+.container{
+  width: 100%;
+  height: var(--height--);
+}
+
+.info{
+  width: 100%;
+  height: 6%;
+  background-color:white;
+}
+
+.form{
+  width: 90%;
+  height: 30%;
+  margin-top: 3%;
+  margin-left: 5%;
+}
+.formHeader{
+  width: 100%;
+  height: 10%;
+  padding-bottom: 2%;
+}
+.header{
+  font-size: 30rpx;
+  font-style: italic;
+}
+
+.foot{
+  width: 90%;
+  height: 64%;
+  margin-left: 5%;
+  margin-top: 2%;
+  background-color:white;
+}
+.foot_header{
+  width: 100%;
+  margin-bottom: 2%;
+}
+.foot_header_text{
+  font-size: 30rpx;
+  font-style: italic;
+}
+.submit{
+  height: 90rpx;
+  background-color:white;
+}
+.baoming{
+  margin-left: 30%;
+}

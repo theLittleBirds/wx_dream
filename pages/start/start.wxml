@@ -1,0 +1,4 @@
+<view class="container">
+  <image mode="aspecFlt" class="image-start" src="/image/start.jpg"></image>
+  <button class="start-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 立即体验 </button>
+</view>

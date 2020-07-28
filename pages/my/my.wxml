@@ -1,0 +1,35 @@
+<view class="container">
+    <view wx:if="{{hasUserInfo}}" class="userinfo">
+        <image wx:if="{{userInfo.avatarUrl}}" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view wx:else class="userinfo" style="margin-bottom:50rpx;">
+        <image class="userinfo-avatar" src="/image/nologin.png" background-size="cover"></image>
+        <button class="weui-btn mini-btn" plain="true" size="mini" bindtap="goLogin">立即登录</button>
+    </view>
+
+    <van-cell is-link title="我的学生" title-class="cell-title"
+      link-type="navigateTo"
+      bindtap="aboutUs"
+      url="/pages/students/index" />
+
+      <view class="line"></view>
+
+      <van-cell is-link title="我的课程" title-class="cell-title"
+      link-type="navigateTo"
+      bindtap="aboutUs"
+      url="/pages/students/index" />
+
+    <view class="space"></view>
+
+    <van-cell is-link title="我的计划" title-class="cell-title"
+      link-type="navigateTo"
+      bindtap="aboutUs"
+      url="/pages/ourlocation/ourlocation1" />
+
+    <view class="line"></view>
+
+    <view class="menu-item" bindtap="clearStorage">清除缓存</view>
+    <view class="line"></view>
+    <view wx:if="{{apiUserInfoMap}}" class="menu-item" bindtap="loginOut">退出登录</view>
+</view>

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-button": "/lib/dist/button/index",
+    "van-field": "/lib/dist/field/index",
+    "van-notice-bar": "/lib/dist/notice-bar/index",
+    "van-pane": "/lib/dist/panel/index",
+    "van-divider": "/lib/dist/divider/index"
+  },
+  "disableScroll": true
+}
