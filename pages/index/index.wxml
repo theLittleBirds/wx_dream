@@ -2,13 +2,13 @@
 <view class="container" style='--height--:{{clientHeight}}rpx'>
 	<!-- 首页上方轮播图 -->
 	<view class="slid-show">
-		<swiper indicator-dots="{{swiperOptions.indicatorDots}}" 
+		<swiper indicator-dots="{{swiperOptions.indicatorDots}}"
             indicator-color="{{swiperOptions.indicatorColor}}"
-            autoplay="{{swiperOptions.autoplay}}" 
-            interval="{{swiperOptions.interval}}" 
-            circular="{{swiperOptions.circular}}" 
+            autoplay="{{swiperOptions.autoplay}}"
+            interval="{{swiperOptions.interval}}"
+            circular="{{swiperOptions.circular}}"
             class="swiper">
-			<!-- 块级元素，暂时不知道有啥用！！！ -->
+			<!-- 块级元素，暂时不知道有啥用！！！！！！ -->
 			<block>
 				<swiper-item wx:for="{{bannerData}}" wx:key="index">
 					<image mode="aspecFlt" class="swiper-img" src="{{item.imgUrl}}"></image>

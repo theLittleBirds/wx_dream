@@ -4,7 +4,8 @@
     "van-field": "/lib/dist/field/index",
     "van-notice-bar": "/lib/dist/notice-bar/index",
     "van-pane": "/lib/dist/panel/index",
-    "van-divider": "/lib/dist/divider/index"
+    "van-divider": "/lib/dist/divider/index",
+    "van-toast": "/lib/dist/toast/index"
   },
   "disableScroll": true
 }

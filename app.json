@@ -3,20 +3,21 @@
     "pages/start/start",
     "pages/index/index",
     "pages/apply/apply",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/students/students"
   ],
-  "permission":{
-    "scope.userLocation":{
-      "desc":"你的位置信息将用于小程序位置接口的效果展示"
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
   },
   "window": {
     "navigationBarBackgroundColor": "#FFC0CB",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "星梦之声少儿主持与口才表演",
-    "backgroundColor":"#FFC0CB",
+    "backgroundColor": "#FFC0CB",
     "backgroundTextStyle": "light",
-    "enablePullDownRefresh":false
+    "enablePullDownRefresh": false
   },
   "tabBar": {
     "color": "#FFFFFF",
@@ -44,5 +45,5 @@
     ]
   },
   "sitemapLocation": "sitemap.json",
-  "debug":false
+  "debug": false
 }

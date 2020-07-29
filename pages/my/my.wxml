@@ -10,8 +10,7 @@
 
     <van-cell is-link title="我的学生" title-class="cell-title"
       link-type="navigateTo"
-      bindtap="aboutUs"
-      url="/pages/students/index" />
+      url="/pages/students/students" />
 
       <view class="line"></view>
 

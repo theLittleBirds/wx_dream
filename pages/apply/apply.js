@@ -1,5 +1,8 @@
 // pages/apply/apply.js
-const app = getApp()
+const app = getApp();
+const UTIL = require('../../utils/util');
+const API = require('../../utils/api');
+import Toast from '../../lib/dist/toast/toast';
 Page({
   /**
    * 页面的初始数据
@@ -83,33 +86,51 @@ Page({
     })
   },
   name: function(e){
-    this.setData({name:e.detail.value})
+    this.setData({name:e.detail})
   },
   age: function(e){
-    this.setData({age:e.detail.value})
+    this.setData({age:e.detail})
   },
   phone: function(e){
-    this.setData({phone:e.detail.value})
+    this.setData({phone:e.detail})
   },
   formSubmit: function(e){
-    console.log('form发生了submit事件，携带数据为：', e.detail.value)
-    let that = this;
-    const db = wx.cloud.database({});
-    const cont = db.collection('student');
-    cont.add({
-      data:{
-        name:that.data.name,
-        age:that.data.age,
-        phone:that.data.phone
-      },
-      success:function(res){
-        wx.showToast({
-          title: '预约成功',
-          icon:'success',
-          duration: 2000     
-        })
-      }
-    })
+    if(this.data.name === ""){
+      Toast('请填写宝贝姓名');
+      return
+    }
+    if(this.data.age === ""){
+      Toast('请填写宝贝年龄');
+      return
+    }
+    if(this.data.phone === ""){
+      Toast('请填写联系方式');
+      return
+    }
+    UTIL.request(API.addUserURrl,
+                {
+                  name:this.data.name,
+                  age:this.data.age,
+                  phone:this.data.phone
+                },'POST').then(res=>{
+                  console.log(res)
+                    if(res.code == 1200){
+                      if(res.message){
+                        wx.showModal({
+                          title: '预约成功',
+                          content: res.message,
+                          showCancel: false
+                        })
+                        return;
+                      }
+                    }else{
+                      wx.showModal({
+                        title: '预约失败',
+                        content: res.message,
+                        showCancel: false
+                      })
+                    }
+                 })
   }
 
 })

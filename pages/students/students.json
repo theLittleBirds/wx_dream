@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "etable" : "/components/etable/etable",
+    "van-index-bar": "/lib/dist/index-bar/index",
+    "van-index-anchor": "/lib/dist/index-anchor/index"
+  },
+  "navigationBarTitleText": "我的学生"
+}

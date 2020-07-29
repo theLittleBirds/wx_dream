@@ -1,0 +1,61 @@
+/* pages/students/students.wxss */
+
+.swiper {
+    width: 92%;
+    margin-left: 4%;
+    margin-top: 1%;
+    height: 72%;
+}
+.swiper-tab {
+    text-align: center;
+    line-height: 80rpx;
+    background: #FFFFFF;
+    height: 10%;
+}
+
+.swiper-tab-list {
+    font-size: 30rpx;
+    display: inline-block;
+    width: 46%;
+    color: #777;
+}
+
+.on {
+    color: #da7c0c;
+    border-bottom: 5rpx solid #da7c0c;
+}
+
+.swiper-box {
+    display: block;
+    overflow: hidden;
+    background: #FFFFFF;
+    height: 90%;
+}
+
+.swiper-item-card {
+    width: 92%;
+    margin-left: 4%;
+    margin-top: 5%;
+    height: 37%;
+}
+
+.swiper-item {
+    width: 100%;
+    box-shadow: 2px 2px 5px #ccc;
+    height: 100%;
+}
+
+.scroll-view {
+  /* margin-top: 60rpx; */
+  height: 96px;
+  background-color: white;
+  -moz-box-shadow: 0px 0px 10px #B6B6B6;
+  -webkit-box-shadow: 0px 0px 10px #B6B6B6;
+  box-shadow: 0px 0px 10px #B6B6B6;
+  position:absolute;left:50%;width:50%;z-index:5;
+  text-align: center;
+  border-radius: 5px;
+  left: 23%;
+  margin-top: 13%;
+  width: 35%;
+}

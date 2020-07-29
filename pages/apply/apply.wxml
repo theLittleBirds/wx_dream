@@ -16,15 +16,18 @@
           <van-field required
             bindinput="name"
             label="宝贝姓名"
+            name='name' value='{{name}}'
             placeholder="请输入宝贝姓名"/>
           <van-field 	required
             bindinput="age"
             label="年龄"
+            name='age' value='{{age}}'
             placeholder="请输入宝贝年龄"/>
           <van-field 	required
             bindinput="phone"
             maxlength="11"
             label="联系电话"
+            name='phone' value='{{phone}}'
             placeholder="请输入联系方式"/>
         </van-cell-group>
         <view class="submit">
@@ -49,5 +52,5 @@
           style="width: 100%; height: 100%;"></map>
     </view>
   </view>
-  
+  <van-toast id="van-toast" />
 </view>
